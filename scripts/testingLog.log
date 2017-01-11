@@ -1,0 +1,551 @@
+Server listening on 127.0.0.1 Port 12345 with internal storage dir: ./tmp/
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65101
+Received from client:
+NEW_TXN -1 0 10
+
+common.txt 
+-------------------------------------
+Sent to client
+====> begin message
+ACK 35514 0 0 10 
+
+common.txt
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65101
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65102
+Received from client:
+WRITE 35514 1 22
+
+this is a test message 
+-------------------------------------
+Sent to client
+====> begin message
+ACK 35514 1 0 22 
+
+
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65102
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65103
+Received from client:
+COMMIT 35514 1 0
+
+
+
+-------------------------------------
+Sent to client
+====> begin message
+ACK 35514 1 0 22 
+
+
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65103
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65104
+Received from client:
+WRITE 35514 1 22
+
+this is a test message 
+-------------------------------------
+Sent to client
+====> begin message
+ERROR 35514 1 202 28 
+
+Transaction already commited
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65104
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65105
+Received from client:
+WRITE -2 1 22
+
+this is a test message 
+-------------------------------------
+Sent to client
+====> begin message
+ERROR -2 1 201 53 
+
+Invalid transaction ID - Transaction ID doesn't exist
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65105
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65106
+Received from client:
+NEW_TXN -1 0 10
+
+common.txt 
+-------------------------------------
+Sent to client
+====> begin message
+ACK 34346 0 0 10 
+
+common.txt
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65106
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65107
+Received from client:
+WRITE 34346 0 22
+
+this is a test message 
+-------------------------------------
+Sent to client
+====> begin message
+ERROR 34346 0 202 74 
+
+Invalid operation - Message Sequence No of this transaction already exists
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65107
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65108
+Received from client:
+COMMIT -2 2 0
+
+
+
+-------------------------------------
+Sent to client
+====> begin message
+ERROR -2 2 201 53 
+
+Invalid transaction ID - Transaction ID doesn't exist
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65108
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65109
+Received from client:
+NEW_TXN -1 0 10
+
+common.txt 
+-------------------------------------
+Sent to client
+====> begin message
+ACK 66495 0 0 10 
+
+common.txt
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65109
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65110
+Received from client:
+COMMIT 66495 0 0
+
+
+
+-------------------------------------
+Sent to client
+====> begin message
+ACK 66495 0 0 0 
+
+
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65110
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65111
+Received from client:
+NEW_TXN -1 0 10
+
+common.txt 
+-------------------------------------
+Sent to client
+====> begin message
+ACK 16239 0 0 10 
+
+common.txt
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65111
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65112
+Received from client:
+WRITE 16239 1 22
+
+this is a test message 
+-------------------------------------
+Sent to client
+====> begin message
+ACK 16239 1 0 22 
+
+
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65112
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65113
+Received from client:
+COMMIT 16239 1 0
+
+
+
+-------------------------------------
+Sent to client
+====> begin message
+ACK 16239 1 0 22 
+
+
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65113
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65114
+Received from client:
+READ 1 1 10
+
+common.txt 
+-------------------------------------
+Sent to client
+====> begin message
+this is a test messagethis is a test message ====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65114
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65115
+Received from client:
+NEW_TXN -1 0 12
+
+aborted1.txt 
+-------------------------------------
+Sent to client
+====> begin message
+ACK 74262 0 0 12 
+
+aborted1.txt
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65115
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65116
+Received from client:
+WRITE 74262 1 22
+
+this is a test message 
+-------------------------------------
+Sent to client
+====> begin message
+ACK 74262 1 0 22 
+
+
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65116
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65117
+Received from client:
+ABORT 74262 0 0
+
+
+
+Force Termination Of Client Connection
+End Client Connection at 127.0.0.1 Port: 65117
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65118
+Received from client:
+WRITE 74262 1 22
+
+this is a test message 
+-------------------------------------
+Sent to client
+====> begin message
+ERROR 74262 1 201 53 
+
+Invalid transaction ID - Transaction ID doesn't exist
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65118
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65119
+Received from client:
+NEW_TXN -1 0 12
+
+aborted2.txt 
+-------------------------------------
+Sent to client
+====> begin message
+ACK 57470 0 0 12 
+
+aborted2.txt
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65119
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65120
+Received from client:
+WRITE 57470 1 22
+
+this is a test message 
+-------------------------------------
+Sent to client
+====> begin message
+ACK 57470 1 0 22 
+
+
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65120
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65121
+Received from client:
+ABORT 57470 0 0
+
+
+
+Force Termination Of Client Connection
+End Client Connection at 127.0.0.1 Port: 65121
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65122
+Received from client:
+NEW_TXN -1 0 12
+
+aborted2.txt 
+-------------------------------------
+Sent to client
+====> begin message
+ACK 17158 0 0 12 
+
+aborted2.txt
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65122
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65123
+Received from client:
+WRITE 17158 1 22
+
+this is a test message 
+-------------------------------------
+Sent to client
+====> begin message
+ACK 17158 1 0 22 
+
+
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65123
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65124
+Received from client:
+COMMIT 17158 1 0
+
+
+
+-------------------------------------
+Sent to client
+====> begin message
+ACK 17158 1 0 22 
+
+
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65124
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65125
+Received from client:
+ABORT 17158 0 0
+
+
+
+-------------------------------------
+Sent to client
+====> begin message
+ERROR 17158 0 202 28 
+
+Transaction already commited
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65125
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65126
+Received from client:
+NEW_TXN -1 0 12
+
+ommision.txt 
+-------------------------------------
+Sent to client
+====> begin message
+ACK 14151 0 0 12 
+
+ommision.txt
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65126
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65127
+Received from client:
+WRITE 14151 1 22
+
+this is a test message 
+-------------------------------------
+Sent to client
+====> begin message
+ACK 14151 1 0 22 
+
+
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65127
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65128
+Received from client:
+WRITE 14151 2 22
+
+this is a test message 
+-------------------------------------
+Sent to client
+====> begin message
+ACK 14151 2 0 22 
+
+
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65128
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65129
+Received from client:
+WRITE 14151 6 22
+
+this is a test message 
+-------------------------------------
+Sent to client
+====> begin message
+ACK 14151 6 0 22 
+
+
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65129
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65130
+Received from client:
+WRITE 14151 11 22
+
+this is a test message 
+-------------------------------------
+Sent to client
+====> begin message
+ACK 14151 11 0 22 
+
+
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65130
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65131
+Received from client:
+WRITE 14151 8 22
+
+this is a test message 
+-------------------------------------
+Sent to client
+====> begin message
+ACK 14151 8 0 22 
+
+
+====> end message
+
+Total Threads Running:  2
+End Client Connection at 127.0.0.1 Port: 65131
+==============================================
+
+==============================================
+Connected to Client at 127.0.0.1 Port: 65
